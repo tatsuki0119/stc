@@ -1,0 +1,15 @@
+a[href^="tel:"] {
+  pointer-events: auto;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  font-weight: 600;
+  line-height: 1.9;
+}
+
+/* ============================================ */

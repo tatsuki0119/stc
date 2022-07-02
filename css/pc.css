@@ -413,14 +413,15 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
 }
 
 .main_section03 h3 {
-  font-family:'源ノ角ゴシック';
+  /* font-family:'源ノ角ゴシック'; */
+  font-family: YuGothic,'Yu Gothic',sans-serif;
   font-weight: bold;
   color: #487BB5;
 }
 
 .main_section03 p {
-  font-family:'源ノ角ゴシック';
-  font-family:'Source Han Sans JP';
+  /* font-family:'源ノ角ゴシック'; */
+  font-family: YuGothic,'Yu Gothic',sans-serif;
   font-weight: normal;
   color: #000;
 }

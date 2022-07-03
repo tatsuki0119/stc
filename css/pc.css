@@ -329,7 +329,7 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   padding-bottom: 96px;
   max-width: 1100px;
   margin: 0 auto;
-  border: red 1px solid;
+  /* border: red 1px solid; */
 }
 
 .business {
@@ -485,6 +485,9 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
 .main_section03 p {
   /* font-family:'源ノ角ゴシック'; */
   font-family: YuGothic,'Yu Gothic',sans-serif;
+  /* font-family: 'source-han-sans-japanese', sans-serif; */
+  font-style: normal;
+  font-weight: 200; 
   font-weight: normal;
   color: #000;
 }

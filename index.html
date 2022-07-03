@@ -15,40 +15,43 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
-      <p class="header_logo"><a href="index.html"><img src="img/rogo1.png" alt="株式会社エスティーシー"></a></p>
-      <div class="heaader_section01">
-        <div class="pc-mode">
-          <ul class="header_navi">
-            <li><a href="#works">Works</a></li>
-            <li><a href="#recruit">Recruit</a></li>
-            <li><a href="#concept">Concept</a></li>
-            <li><a href="#company">Company</a></li>
-          </ul>
-        </div>
-        <div class="sp-mode">
-          <div class="openbtn7">
-            <div class="openbtn-area">
-              <span></span>
-              <span></span>
-              <span></span>
+    <div class="header-background"><p>　</p></div>
+    <div class="header-wrapper">
+      <header class="header">
+        <p class="header_logo"><a href="index.html"><img src="img/rogo1.png" alt="株式会社エスティーシー"></a></p>
+        <div class="heaader_section01">
+          <div class="pc-mode">
+            <ul class="header_navi">
+              <li><a href="#works">Works</a></li>
+              <li><a href="recruit.html">Recruit</a></li>
+              <li><a href="company.html">Company</a></li>
+              <li><a href="contact.html">Concept</a></li>
+            </ul>
+          </div>
+          <div class="sp-mode">
+            <div class="openbtn7">
+              <div class="openbtn-area">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="sp-mode">
-        <nav id="g-nav">
-          <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
-            <ul>
-              <li><a href="#works">Works</a></li>
-              <li><a href="#recruit">Recruit</a></li>
-              <li><a href="#concept">Concept</a></li>
-              <li><a href="#company">Company</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+        <div class="sp-mode">
+          <nav id="g-nav">
+            <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+              <ul>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#recruit">Recruit</a></li>
+                <li><a href="#concept">Concept</a></li>
+                <li><a href="#company">Company</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
 
     <main class="main">
       <section class="main_section01">
@@ -61,15 +64,16 @@
           </h2> -->
         </div>
         <ul class="slider">
-          <img class="slider-item slider-item01" src="img/top01.png">
-          <img class="slider-item slider-item02" src="img/top02.png">
-          <img class="slider-item slider-item03" src="img/top03.png">
+          <a href="#works"><img class="slider-item slider-item01" src="img/top-top.png"></a>
+          <a href="recruit.html"><img class="slider-item slider-item02" src="img/recuruit-top.png"></a>
+          <a href="company.html"><img class="slider-item slider-item03" src="img/company-top.png"></a>
+          <a href="contact.html"><img class="slider-item slider-item04" src="img/contact-top.png"></a>
         </ul>
       </section>
 
-      <section id="works" class="main_section02">
-        <p class="business flowing">BUSINESS</p>
-        <p class="details flowing">DETAILS</p>
+      <section class="main_section02" id="works">
+        <div class="business img-wrap-right"><img src="img/BUSINESS.png" alt=""></div>
+        <div class="details img-wrap-left"><img src="img/DETAILS.png" alt=""></div>
         <div id="page-link" class="main_section02_inner">
           <div class="sp-flex01">
             <a href="#Cloud" class="a1"><div class="main_section02_bg_dark"></div><h2>Cloud</h2></a>
@@ -232,30 +236,33 @@
     </main>
 
     <footer id="company" class="footer">
-      <div class="footer_section01">
-        <img src="img/rogo2.png">
-      </div>
-      <div class="footer_section02">
-        <div class="footer_section02_inner01">
-          <p>〒103-0024<br>
-            東京都中央区日本橋小舟町8-6 H1O 日本橋小舟町3F<br>
-            TEL:03-6667-0082（代表）<br>
-            FAX:03-6667-0083<br>
-          </p>
-          <a class="maplink" href="https://goo.gl/maps/hGnueSiNkZAEsjhD8" target="_blank">MAP</a>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.6465714815313!2d139.7762288143949!3d35.68570353733582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889514e3a28d1%3A0xb1b43ed238de873e!2z44CSMTAzLTAwMjQg5p2x5Lqs6YO95Lit5aSu5Yy65pel5pys5qmL5bCP6Iif55S677yY4oiS77yWIDNm!5e0!3m2!1sja!2sjp!4v1652825879162!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="footer-width">
+        <div class="footer_section01">
+          <img src="img/rogo2.png">
         </div>
-        <div class="footer_section02_inner02">
-          <a href="#works">事業内容</a><br>
-          <a href="company.html">企業情報</a><br>
-          <a href="recruit.html">採用案内</a><br>
-          <a href="contact.html">お問い合わせ</a>
+        <div class="footer_section02">
+          <div class="footer_section02_inner01">
+            <p>〒103-0024<br>
+              東京都中央区日本橋小舟町8-6 H1O 日本橋小舟町3F<br>
+              TEL:03-6667-0082（代表）<br>
+              FAX:03-6667-0083<br>
+            </p>
+            <a class="maplink" href="https://goo.gl/maps/hGnueSiNkZAEsjhD8" target="_blank">MAP</a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.6465714815313!2d139.7762288143949!3d35.68570353733582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889514e3a28d1%3A0xb1b43ed238de873e!2z44CSMTAzLTAwMjQg5p2x5Lqs6YO95Lit5aSu5Yy65pel5pys5qmL5bCP6Iif55S677yY4oiS77yWIDNm!5e0!3m2!1sja!2sjp!4v1652825879162!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="footer_section02_inner02">
+            <a href="index.html#works">事業内容</a><br>
+            <a href="company.html">企業情報</a><br>
+            <a href="recruit.html">採用案内</a><br>
+            <a href="contact.html">お問い合わせ</a>
+          </div>
         </div>
       </div>
       <div class="footer_section03">
-        <small>©️ STC inc. ALL Rights Reserved.</small>
+        <div class="footer-width">
+          <small>©️ STC inc. ALL Rights Reserved.</small>
+        </div>
       </div>
-
     </footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

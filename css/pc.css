@@ -1200,7 +1200,6 @@ span.red-big {
 
 .background-diagonal-yellow02.contact01 {
   top: 700px;
-  padding: 50vw;
 }
 
 .background-diagonal-gray02.contact02 {
@@ -1659,7 +1658,7 @@ span.gray {
     margin-bottom: 32px;
   }
 
-  .background-diagonal-yellow.contact01 {
+  .background-diagonal-yellow02.contact01 {
     top: 700px;
     padding: 50vw;
   }

@@ -400,6 +400,11 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   width: 100vw;
 }
 
+#works {
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+
 /* ↑背景の斜めのグレー・青・黄色の線 */
 /* 位置はそれぞれのセクションで指定 */
 
@@ -576,6 +581,21 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   background-size: cover;
 }
 
+.stc-parent {
+  position: relative;
+}
+
+.stc-triangle {
+  border-top: 20px solid #3B4350;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 30;
+}
+
 .STG_feature{
   text-align: center;
   background-color:#3B4350;
@@ -646,7 +666,7 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   position: absolute;
   left: 0%;
   top:20%;
-  box-shadow: 5px 5px 5px silver;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .color_pillar01_innner h2{
@@ -696,7 +716,7 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   position: absolute;
   left: -1065%;
   top:20%;
-  box-shadow: 5px 5px 5px silver;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .color_pillar02_innner h2{
@@ -739,7 +759,7 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   position: absolute;
   left: 0%;
   top:20%;
-  box-shadow: 5px 5px 5px silver;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .color_pillar03_innner h2{
@@ -791,7 +811,7 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   position: absolute;
   left: -1065%;
   top:20%;
-  box-shadow: 5px 5px 5px silver;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .color_pillar04_innner h2{
@@ -960,6 +980,7 @@ iframe{
   padding: 24px;
   margin-bottom: 32px;
   font-family: YuGothic,'Yu Gothic',sans-serif;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .concept-img {
@@ -980,17 +1001,14 @@ iframe{
 
 .background-diagonal-blue.company01 {
   top: 1200px;
-  padding: 70vw;
 }
 
 .background-diagonal-gray01.company02 {
   top: 2200px;
-  padding: 70vw;
 }
 
 .background-diagonal-blue.company03 {
   top: 3200px;
-  padding: 70vw;
 }
 
 .company {
@@ -1092,8 +1110,8 @@ iframe{
 
 .joinus {
   text-align: right;
-  max-width: 1100px;
-  margin: 0px auto;
+  max-width: 900px;
+  margin: 0px 0px 0px auto;
   /* position: relative;
   z-index: 4; */
 }
@@ -1205,7 +1223,7 @@ span.red-big {
 }
 
 .contact-text01 {
-  color: gray;
+  font-family: YuGothic,'Yu Gothic',sans-serif;
   line-height: 2;
   margin-bottom: 48px;
   font-weight: bold;
@@ -1243,8 +1261,8 @@ form .submit-btn {
   display: block;
   margin-top: 32px;
   padding: 16px 24px 16px 24px;
-  background: #f9f9f9;
-  border: #000 1px solid;
+  color: #fff;
+  background: #000;
   border-radius: 5px;
 }
 
@@ -1304,17 +1322,17 @@ span.gray {
 
   .background-diagonal-gray01.index01 {
     top: 1000px;
-    padding: 70vw;
+    padding: 50vw;
   }
   
   .background-diagonal-yellow01.index02 {
     top: 2000px;
-    padding: 70vw;
+    padding: 50vw;
   }
   
   .background-diagonal-gray01.index03 {
     top: 2800px;
-    padding: 70vw;
+    padding: 50vw;
   }
 
   .main_section01 {
@@ -1534,17 +1552,17 @@ span.gray {
 
   .background-diagonal-blue.company01 {
     top: 1200px;
-    padding: 70vw;
+    padding: 50vw;
   }
   
-  .background-diagonal-gray.company02 {
-    padding: 70vw;
+  .background-diagonal-gray01.company02 {
     top: 2200px;
+    padding: 50vw;
   }
   
   .background-diagonal-blue.company03 {
-    padding: 70vw;
     top: 3900px;
+    padding: 50vw;
   }
 
   .concept {
@@ -1608,6 +1626,8 @@ span.gray {
     margin-top: 50px;
     padding-top: 64px;
     padding-bottom: 32px;
+    max-width: 80vw;
+    margin: 0px 0px 0px auto;
   }
 
   .recruit-text03 {
@@ -1641,7 +1661,7 @@ span.gray {
 
   .background-diagonal-yellow.contact01 {
     top: 700px;
-    padding: 70vw;
+    padding: 50vw;
   }
   
   .background-diagonal-gray02.contact02 {

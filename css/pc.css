@@ -697,7 +697,7 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   display: inline-block;
   max-width: 55%;
   height: 70%;
-  margin-top:350px;
+  margin-top:500px;
 }
 
 .color_pillar02{
@@ -1110,7 +1110,7 @@ iframe{
 
 .joinus {
   text-align: right;
-  max-width: 900px;
+  max-width: 70vw;
   margin: 0px 0px 0px auto;
   /* position: relative;
   z-index: 4; */

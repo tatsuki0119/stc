@@ -14,7 +14,9 @@
     <link rel="icon" href="img/favicon.png">
 </head>
 <body>
-  <div class="wrapper">
+  <div class="background-diagonal-yellow02 contact01"></div>
+  <div class="background-diagonal-gray02 contact02"></div>
+  <div class="wrapper contact">
     <div class="header-background"><p>　</p></div>
     <div class="header-wrapper">
       <header class="header">
@@ -55,7 +57,7 @@
       </header>
     </div>
 
-    <main class="main">
+    <main class="contact-main">
       <section class="main_section01">
         <div class="main_section01_inner sub">
           <!-- <p class="title">Contact</p>
@@ -69,14 +71,14 @@
         </ul>
       </section>
       
-      <div class="background-diagonal02-contact">
+      <!-- <div class="background-diagonal02-contact"> -->
         <section class="contact-section01">
           <h2 class="contact-title" >お問い合わせ<br class="sp-br">フォーム</h2>
           <p class="contact-text01" >
             弊社へのご相談は、下記フォームより必須項目をご入力の上、ご連絡ください。<br>
             担当者よりご連絡させて頂きます。
           </p>
-          <form action="" method="post">
+          <form action="confirm.php" method="post">
             <p>お問い合わせの要件概要<span class="red">必須</span></p>
             <input class="input" type="text" name="title" required>
             
@@ -84,14 +86,14 @@
             <input class="input" type="text" name="name" required>
     
             <p>フリガナ<span class="red">必須</span></p>
-            <input class="input" type="text" name="name" required>
+            <input class="input" type="text" name="kana" required>
 
-            <p>会社名<span class="gray">任意</span></p>
+            <p>会社名</p>
             <input class="input" type="text" name="company">
     
             <p>メールアドレス<span class="red">必須</span></p>
-            <input class="input" type="email" name="email" required>
-            <input class="input" type="email" name="email" placeholder="確認用" required>
+            <input class="input" type="email" name="email01" required>
+            <input class="input" type="email" name="email02" placeholder="確認用" required>
     
             <p>お問い合わせ内容<span class="red">必須</span></p>
             <textarea class="textarea" name="contact_body" rows="10" required></textarea>
@@ -100,7 +102,7 @@
     
           </form>
         </section>
-      </div>
+      <!-- </div> -->
 
       <section class="main_section04 sub"></section>
 

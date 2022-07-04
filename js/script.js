@@ -30,5 +30,3 @@
         pauseOnHover: false,//マウスホバーで一時停止を無効
         pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
     });
-
-    

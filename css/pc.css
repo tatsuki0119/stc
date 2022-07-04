@@ -1,9 +1,35 @@
 @charset "UTF-8";
 
+/* マウスカーソル用 */
+
 /* body {
-  max-width: 1100px;
-  margin: 0 auto;
+  position: relative;
+  cursor: none;
+}
+
+.cursor,
+.fllower {
+  border-radius: 50%;
+  position: absolute;
+  cursor: none;
+  pointer-events: none;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  background: #000;
+  z-index: 10001;
+}
+
+.follower {
+  width: 40px;
+  height: 40px;
+  background: #fdfe00;
+  z-index: 1000;
 } */
+
+/* マウスカーソル用 */
 
 .sp-mode {
   display: none;
@@ -26,10 +52,6 @@ a[href*="tel:"] {
   cursor: default;
   text-decoration: none;
 }
-
-/* a:hover {
-  opacity: 0.7;
-} */
 
 img {
   /* width: auto; */
@@ -296,6 +318,79 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   text-decoration: underline;
 }
 
+/* ↓背景の斜めのグレー・青・黄色の線 */
+
+.background-diagonal-gray01 {
+  background-color:rgba(195, 194, 192, 0.8);
+  transform: skewY(-10deg);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  padding: 20vw;
+  width: 100vw;
+}
+
+.background-diagonal-gray02 {
+  background-color:rgba(195, 194, 192, 0.8);
+  transform: skewY(10deg);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  padding: 20vw;
+  width: 100vw;
+}
+
+.background-diagonal-blue {
+  background-color: rgba(71, 123, 181, 0.8);
+  transform: skewY(10deg);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  padding: 20vw;
+  width: 100vw;
+}
+
+.background-diagonal-yellow01 {
+  background-color:rgba(255, 255, 0, 0.8);
+  transform: skewY(10deg);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  padding: 20vw;
+  width: 100vw;
+}
+
+.background-diagonal-yellow02 {
+  background-color:rgba(255, 255, 0, 0.8);
+  transform: skewY(-10deg);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  padding: 20vw;
+  width: 100vw;
+}
+
+/* ↑背景の斜めのグレー・青・黄色の線 */
+/* 位置はそれぞれのセクションで指定 */
+
+.background-diagonal-gray01.index01 {
+  top: 2200px;
+}
+
+.background-diagonal-yellow01.index02 {
+  top: 3500px;
+}
+
+.background-diagonal-gray01.index03 {
+  top: 4800px;
+  padding: 25vw;
+}
+
 .main_section01{
   padding: 180px 80px 110px 80px;
   position: relative;
@@ -476,18 +571,14 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
 }
 
 .main_section03 h3 {
-  /* font-family:'源ノ角ゴシック'; */
   font-family: YuGothic,'Yu Gothic',sans-serif;
   font-weight: bold;
+  font-size: 18px;
   color: #487BB5;
 }
 
 .main_section03 p {
-  /* font-family:'源ノ角ゴシック'; */
   font-family: YuGothic,'Yu Gothic',sans-serif;
-  /* font-family: 'source-han-sans-japanese', sans-serif; */
-  font-style: normal;
-  font-weight: 200; 
   font-weight: normal;
   color: #000;
 }
@@ -500,7 +591,7 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
 }
 
 .main_section03_inner01{
-  transform: skewY(20deg);
+  /* transform: skewY(20deg); */
   height:auto;
   display:flex;
   justify-content: space-between;
@@ -530,6 +621,7 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   position: absolute;
   left: 0%;
   top:20%;
+  box-shadow: 5px 5px 5px silver;
 }
 
 .color_pillar01_innner h2{
@@ -537,7 +629,6 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
 }
 
 .color_pillar01_innner h3{
-  font-size: 15px;
   margin-bottom: 30px;
 }
 
@@ -554,7 +645,7 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   max-width: 100%;
   height:auto;
   padding: 0 50px;
-  transform: skewY(-20deg);
+  /* transform: skewY(-20deg); */
 }
 
 .main_section03_img02{
@@ -580,6 +671,7 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   position: absolute;
   left: -1065%;
   top:20%;
+  box-shadow: 5px 5px 5px silver;
 }
 
 .color_pillar02_innner h2{
@@ -587,7 +679,6 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
 }
 
 .color_pillar02_innner h3{
-  font-size: 15px;
   margin-bottom: 30px;
 }
 
@@ -601,14 +692,15 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
 
 .main_section03_img03{
   display: inline-block;
-  max-width: 55%;
+  width: 45%;
+  /* max-width: 55%; */
   height: 70%;
-  margin-top:350px;
+  margin-top:200px;
 }
 
 .color_pillar03{
   display: inline-block;
-  background-color: #FFFF00;
+  background-color: #C3C2C0;
   position: relative;
   padding:400px  30px;
 }
@@ -622,6 +714,7 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   position: absolute;
   left: 0%;
   top:20%;
+  box-shadow: 5px 5px 5px silver;
 }
 
 .color_pillar03_innner h2{
@@ -629,12 +722,11 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
 }
 
 .color_pillar03_innner h3{
-  font-size: 15px;
   margin-bottom: 30px;
 }
 
 .main_section03_inner04{
-  transform: skewY(20deg);
+  /* transform: skewY(20deg); */
   display: flex;
   justify-content: space-between;
   max-width: 100%;
@@ -674,6 +766,7 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   position: absolute;
   left: -1065%;
   top:20%;
+  box-shadow: 5px 5px 5px silver;
 }
 
 .color_pillar04_innner h2{
@@ -681,7 +774,6 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
 }
 
 .color_pillar04_innner h3{
-  font-size: 15px;
   margin-bottom: 30px;
 }
 
@@ -792,7 +884,7 @@ iframe{
 .footer_section02_inner02{
   width:400px;
   display: inline-block;
-  margin-left: 24px;
+  margin: 0 auto;
 }
 
 .footer_section02_inner02 a{
@@ -822,7 +914,7 @@ iframe{
 }
 
 .concept {
-  transform: skewY(20deg);
+  /* transform: skewY(20deg); */
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -842,6 +934,7 @@ iframe{
   background: rgba(255, 255, 255, 0.8);
   padding: 24px;
   margin-bottom: 32px;
+  font-family: YuGothic,'Yu Gothic',sans-serif;
 }
 
 .concept-img {
@@ -860,8 +953,20 @@ iframe{
   z-index: -2;
 }
 
+.background-diagonal-blue.company01 {
+  top: 1200px;
+}
+
+.background-diagonal-gray01.company02 {
+  top: 2200px;
+}
+
+.background-diagonal-blue.company03 {
+  top: 3200px;
+}
+
 .company {
-  transform: skewY(-20deg);
+  /* transform: skewY(-20deg); */
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -875,6 +980,8 @@ iframe{
   font-weight: bold;
   font-size: 48px;
   margin-bottom: 16px;
+  position: relative;
+  z-index: 6;
 }
 
 .company-sub {
@@ -913,16 +1020,28 @@ iframe{
   width: 100%;
 }
 
+.recruit-main {
+  /* 方眼紙模様 */
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), rgba(255, 255, 0, 0.5) calc(100% - 1px)),
+                    linear-gradient(90deg, transparent calc(100% - 1px), rgba(255, 255, 0, 0.5) calc(100% - 1px));
+  background-size: 16px 16px;
+  background-repeat: repeat;
+  background-position: center center;
+  position: relative;
+  z-index: -9999;
+}
+
 .recruit-section01 {
-  transform: skewY(20deg);
+  /* transform: skewY(20deg); */
   max-width: 1100px;
   margin: 0 auto 32px auto;
 }
 
 .recruit-text01 {
-  color: gray;
   padding-left: 48px;
   line-height: 3;
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+  font-weight: normal;
 }
 
 .recruit-text02 {
@@ -946,7 +1065,9 @@ iframe{
 .joinus {
   text-align: right;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0px auto;
+  /* position: relative;
+  z-index: 4; */
 }
 
 .joinus img {
@@ -954,21 +1075,29 @@ iframe{
   /* max-width: 600px; */
 }
 
+.joinus-background {
+  background: rgba(255, 255, 0, 0.7);
+  padding: 100px 0px 30px 0;
+  margin-top: -100px;
+}
+
 .recruit-text03 {
   text-align: center;
-  margin-top: -150px;
+  margin-top: -130px;
   margin-bottom: 64px;
 }
 
 .recruit-text03 img {
   width: 70vw;
   max-width: 1000px;
+  position: relative;
+  z-index: 3;
 }
 
 .recruit-section02 {
-  transform: skewY(-20deg);
+  /* transform: skewY(-20deg); */
   max-width: 1100px;
-  margin: 0 auto 32px auto;
+  margin: 80px auto 32px auto;
 }
 
 .check-img img {
@@ -1012,6 +1141,32 @@ span.red-big {
   font-size: 80px;
 }
 
+.contact-main{
+  /* 方眼紙模様 */
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), rgba(195, 194, 192, 0.5) calc(100% - 1px)),
+                    linear-gradient(90deg, transparent calc(100% - 1px), rgba(195, 194, 192, 0.5) calc(100% - 1px));
+  background-size: 16px 16px;
+  background-repeat: repeat;
+  background-position: center center;
+  position: relative;
+  z-index: -9999;
+}
+
+.background-diagonal-yellow02.contact01 {
+  top: 900px;
+}
+
+.background-diagonal-gray02.contact02 {
+  top: 1800px;
+  padding: 0%;
+  padding: 15vw;
+}
+
+.wrapper.contact {
+  position: relative;
+  z-index: 3;
+}
+
 .contact-title {
   font-weight: bold;
   font-family: YuGothic,'Yu Gothic',sans-serif;
@@ -1033,10 +1188,11 @@ span.red-big {
 }
 
 .contact-section01 {
-  transform: skewY(-20deg);
+  /* transform: skewY(-20deg); */
   font-weight: normal;
   max-width: 1100px;
   margin: 0 auto 32px auto;
+  padding-left: 8px;
 }
 
 form p {
@@ -1117,6 +1273,21 @@ span.gray {
     right: 16px;
   }
 
+  .background-diagonal-gray01.index01 {
+    top: 1000px;
+    padding: 70vw;
+  }
+  
+  .background-diagonal-yellow01.index02 {
+    top: 2000px;
+    padding: 70vw;
+  }
+  
+  .background-diagonal-gray01.index03 {
+    top: 2800px;
+    padding: 70vw;
+  }
+
   .main_section01 {
     padding: 140px 0px 50px 0px;
   }
@@ -1134,9 +1305,9 @@ span.gray {
   }
 
   .business {
-    font-size: 70px;
     padding-bottom: 100px;
     margin-left: 0px;
+    margin-bottom: 0;
   }
 
   .details {
@@ -1162,9 +1333,10 @@ span.gray {
   }
 
   .main_section02_inner{
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     padding-top: 40px;
-    margin-top: -315px;
+    margin-top: -290px;
+    margin-bottom: 55px;
   }
 
   .main_section03_inner01{
@@ -1312,16 +1484,12 @@ span.gray {
     margin-top: 32px;
   }
 
-  .sp-mode .main_section03_inner01{
-    transform: skewY(-20deg);
-  }
-
-  .sp-mode .main_section03_inner03{
-    transform: skewY(20deg);
+  .main_section04 a {
+    margin: 0px;
   }
 
   .sp-mode .color_pillar01 {
-    background-color: #C3C2C0;
+    background-color: #FFFF00;
   }
 
   .title {
@@ -1333,6 +1501,21 @@ span.gray {
 
   .main_section01_inner.sub h1 {
     margin: 112px 0px 16px 0px;
+  }
+
+  .background-diagonal-blue.company01 {
+    top: 1200px;
+    padding: 70vw;
+  }
+  
+  .background-diagonal-gray.company02 {
+    padding: 70vw;
+    top: 2200px;
+  }
+  
+  .background-diagonal-blue.company03 {
+    padding: 70vw;
+    top: 3900px;
   }
 
   .concept {
@@ -1361,7 +1544,7 @@ span.gray {
 
   .aboutus {
     font-size: 60px;
-    padding-bottom: 90px;
+    padding-bottom: 30px;
     margin-left: 0px;
   }
 
@@ -1422,6 +1605,16 @@ span.gray {
     margin-bottom: 32px;
   }
 
+  .background-diagonal-yellow.contact01 {
+    top: 700px;
+    padding: 70vw;
+  }
+  
+  .background-diagonal-gray02.contact02 {
+    top: 1400px;
+    padding: 50vw;
+  }
+
   .contact-section01 {
     margin-left: 8px;
     margin-right: 8px;
@@ -1435,7 +1628,14 @@ span.gray {
     padding-left: 8px;
   }
 
+  .background-diagonal-gray {
+    position: absolute;
+    top: 1000px;
+    left: 0px;
+    z-index: -1;
+    padding: 40vw;
+  }
+
 }
 
 /* ============================================ */
-

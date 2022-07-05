@@ -60,9 +60,9 @@
             <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
               <ul>
                 <li><a href="#works">Works</a></li>
-                <li><a href="#recruit">Recruit</a></li>
-                <li><a href="#company">Company</a></li>
-                <li><a href="#concept">Contact</a></li>
+                <li><a href="recruit.html">Recruit</a></li>
+                <li><a href="company.html">Company</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -71,21 +71,32 @@
     </div>
 
     <main class="main">
+      <!-- <div class="top-background-top"></div> -->
       <section class="main_section01">
-        <div class="main_section01_inner">
+        <!-- <div class="main_section01_inner"> -->
           <!-- <h1>変わる　つくる。<br>支える　広がる。</h1>
           <h2>私たちは、サーバー業務を主軸にさまざまなモノの設計や構築、<br>
             運用保守から機器管理まで幅広い分野に取り組んでいます。<br>
             常に新技術を取り入れ、お客様のシステム環境を<br>
             より快適なものとするサポートを行っています。<br>
           </h2> -->
+        <!-- </div> -->
+        <div class="pc-mode">
+          <ul class="slider">
+            <a href="#works"><img class="slider-item slider-item01" src="img/top-pc-top.png"></a>
+            <a href="recruit.html"><img class="slider-item slider-item02" src="img/recruit-pc-top.png"></a>
+            <a href="company.html"><img class="slider-item slider-item03" src="img/company-pc-top.png"></a>
+            <a href="contact.html"><img class="slider-item slider-item04" src="img/contact-pc-top.png"></a>
+          </ul>
         </div>
-        <ul class="slider">
-          <a href="#works"><img class="slider-item slider-item01" src="img/top-top.png"></a>
-          <a href="recruit.html"><img class="slider-item slider-item02" src="img/recuruit-top.png"></a>
-          <a href="company.html"><img class="slider-item slider-item03" src="img/company-top.png"></a>
-          <a href="contact.html"><img class="slider-item slider-item04" src="img/contact-top.png"></a>
-        </ul>
+        <div class="sp-mode">
+          <ul class="slider">
+            <a href="#works"><img class="slider-item slider-item01" src="img/top-sp-top.png"></a>
+            <a href="recruit.html"><img class="slider-item slider-item02" src="img/recruit-sp-top.png"></a>
+            <a href="company.html"><img class="slider-item slider-item03" src="img/company-sp-top.png"></a>
+            <a href="contact.html"><img class="slider-item slider-item04" src="img/contact-sp-top.png"></a>
+          </ul>
+        </div>
         <div id="works">　</div>
       </section>
 
@@ -102,15 +113,14 @@
         </div>
       </section>
 
-      <div class="stc-parent">
+      <div class="stc-parent pc-mode">
         <h2 class="STG_feature">STCの特徴</h2>
         <div class="stc-triangle"></div>
       </div>
       <section class="main_section03">
 
-        <!-- <div class="background-diagonal01"> -->
           <div class="main_section03_inner01" id="Cloud">
-            <div class="color_pillar01">
+            <div class="color_pillar01 cloud">
               <div class="color_pillar01_innner">
                 <h2>Infra・Cloud</h2>
                 <h3>インフラ・クラウド</h3>
@@ -125,14 +135,13 @@
                 </p>
               </div>
             </div>
-            <img class="main_section03_img01" src="img/infra-img.png">
+            <img class="main_section03_img01 infra" src="img/infra-img.png">
           </div>
-        <!-- </div> -->
 
         <div class="sp-mode">
-          <!-- <div class="background-diagonal02"> -->
+          <div class="stick01"></div>
             <div class="main_section03_inner01" id="Cloud">
-              <div class="color_pillar01">
+              <div class="color_pillar01 ai">
                 <div class="color_pillar01_innner">
                   <h2>lot・AI・RPA</h2>
                   <h3></h3>
@@ -148,13 +157,11 @@
                   </p>
                 </div>
               </div>
-              <img class="main_section03_img01" src="img/iot-img.png">
+              <img  class="main_section03_img01 iot" src="img/iot-img.png">
             </div>
-          <!-- </div> -->
         </div>
        
         <div class="pc-mode">
-          <!-- <div class="background-diagonal02"> -->
             <div class="main_section03_inner02" id="lot">
               <img class="main_section03_img02" src="img/iot-img.png">
               <div class="color_pillar02">
@@ -174,11 +181,10 @@
                 </div>
               </div>
             </div>
-          <!-- </div> -->
         </div>
 
         <div class="main_section03_inner03" id="System">
-          <div class="color_pillar03">
+          <div class="color_pillar03 system">
             <div class="color_pillar03_innner">
               <h2>System solution</h2>
               <h3>システムソリューション</h3>
@@ -196,45 +202,42 @@
         </div>
 
         <div class="sp-mode">
-          <!-- <div class="background-diagonal01"> -->
-            <div class="main_section03_inner03" id="System">
-              <div class="color_pillar03">
-                <div class="color_pillar03_innner">
-                  <h2>SEsupport</h2>
-                  <h3>SEサポート</h3>
-                  <p>
-                    お客様先にて、SEやコンサルタントのサポートを中心とした業務を行います。<br>
-                    一般事務やヘルプデスク等の窓口対応、<br class="pc-br">
-                    ExcelVBA(マクロ)やPowerShellなどを駆使した<br class="pc-br">
-                    作業の効率化、プロジェクト全体のスケジュール管理など、<br class="pc-br">
-                    組織にとって「なくてはならない専門業務」を担当しています。
-                  </p>
-                </div>
+          <div class="stick02"></div>
+          <div class="main_section03_inner03" id="System">
+            <div class="color_pillar03 se">
+              <div class="color_pillar03_innner">
+                <h2>SEsupport</h2>
+                <h3>SEサポート</h3>
+                <p>
+                  お客様先にて、SEやコンサルタントのサポートを中心とした業務を行います。<br>
+                  一般事務やヘルプデスク等の窓口対応、<br class="pc-br">
+                  ExcelVBA(マクロ)やPowerShellなどを駆使した<br class="pc-br">
+                  作業の効率化、プロジェクト全体のスケジュール管理など、<br class="pc-br">
+                  組織にとって「なくてはならない専門業務」を担当しています。
+                </p>
               </div>
-              <img class="main_section03_img03" src="img/se-support-img.png">
             </div>
-          <!-- </div> -->
+            <img class="main_section03_img03" src="img/se-support-img.png">
+          </div>
         </div>
 
         <div class="pc-mode">
-          <!-- <div class="background-diagonal01"> -->
-            <div class="main_section03_inner04" id="Support">
-              <img class="main_section03_img04" src="img/se-support-img.png">
-                <div class="color_pillar04">
-                <div class="color_pillar04_innner">
-                  <h2>SEsupport</h2>
-                  <h3>SEサポート</h3>
-                  <p>
-                    お客様先にて、SEやコンサルタントのサポートを中心とした業務を行います。<br>
-                    一般事務やヘルプデスク等の窓口対応、<br class="pc-br">
-                    ExcelVBA(マクロ)やPowerShellなどを駆使した<br class="pc-br">
-                    作業の効率化、プロジェクト全体のスケジュール管理など、<br class="pc-br">
-                    組織にとって「なくてはならない専門業務」を担当しています。
-                  </p>
-                </div>
+          <div class="main_section03_inner04" id="Support">
+            <img class="main_section03_img04" src="img/se-support-img.png">
+              <div class="color_pillar04">
+              <div class="color_pillar04_innner">
+                <h2>SEsupport</h2>
+                <h3>SEサポート</h3>
+                <p>
+                  お客様先にて、SEやコンサルタントのサポートを中心とした業務を行います。<br>
+                  一般事務やヘルプデスク等の窓口対応、<br class="pc-br">
+                  ExcelVBA(マクロ)やPowerShellなどを駆使した<br class="pc-br">
+                  作業の効率化、プロジェクト全体のスケジュール管理など、<br class="pc-br">
+                  組織にとって「なくてはならない専門業務」を担当しています。
+                </p>
               </div>
             </div>
-          <!-- </div> -->
+          </div>
         </div>
 
       </section>

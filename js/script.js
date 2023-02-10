@@ -27,52 +27,8 @@
 		nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
 		dots: true,//下部ドットナビゲーションの表示
         pauseOnFocus: false,//フォーカスで一時停止を無効
-        pauseOnHover: false,//マウスホバーで一時停止を無効
-        pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
+        pauseOnHover: true,//マウスホバーで一時停止を有効
+        pauseOnDotsHover: true,//ドットナビゲーションをマウスホバーで一時停止を有効
     });
 
 
-
-//マウスストーカー
-const stalker = document.getElementById('stalker');
-let hovFlag = false;
-document.addEventListener('mousemove', function (e) {
-    if (!hovFlag) {
-    stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
-    }
-});
-
-const linkElem = document.querySelectorAll('a:not(.no_stick_),button');
-for (let i = 0; i < linkElem.length; i++) {
-    linkElem[i].addEventListener('mouseover', function (e) {
-        stalker.classList.add('hov_');
-
-        let rect = e.target.getBoundingClientRect();
-        let posX = rect.left + (rect.width / 2);
-        let posY = rect.top + (rect.height / 2);
-
-        stalker.style.transform = 'translate(' + posX + 'px, ' + posY + 'px)';
-
-    });
-    linkElem[i].addEventListener('mouseout', function (e) {
-        hovFlag = false;
-        stalker.classList.remove('hov_');
-    });
-}
-
-
-//カーソル
-let cursorR = 4;
-const cursor = document.getElementById('cursor'); 
-document.addEventListener('mousemove', function (e) {
-    cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
-});
-const linkElem2 = document.querySelectorAll('a,button');
-for (let i = 0; i < linkElem.length; i++) {
-    linkElem[i].addEventListener('mouseover', function (e) {
-        cursor.classList.add('hov_');
-    });
-    linkElem[i].addEventListener('mouseout', function (e) {
-        cursor.classList.remove('hov_');      
-    });
-}

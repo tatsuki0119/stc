@@ -1,61 +1,5 @@
 @charset "UTF-8";
 
-/* マウスカーソル用 */
-
-html,body,a{
-  cursor: none;
-}
-
-#cursor{
-  transform: translate(0,0);
-    pointer-events: none;
-    position: fixed;
-    top: -4px;
-    left: -4px; 
-    width: 8px; 
-    height: 8px; 
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 50%;
-    z-index: 1000;
-    transition: width .3s, height .3s, top .3s, left .3s;
-}
-
-#cursor.hov_{
-  top: -11px;
-  left: -11px;
-  width: 22px;
-  height: 22px;
-  background: rgba(0, 255, 255, 0.8);
-}
-
-#stalker {
-    pointer-events: none;
-    position: fixed;
-    top: -18px;
-    left: -18px;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 0, 0.8);
-    border-radius: 50%;
-    transition: transform 0.2s, top, 0.5s, left 0.5s, width .5s, height .5s, background-color .5s;
-    transition-timing-function: ease-out;
-    z-index: 999;
-}
-
-#stalker.hov_{
-  top: -40px;
-  left: -40px;
-  width: 80px;
-  height: 80px;
-  transition: .5s;
-  background: rgba(255, 0, 255, 0.8);
-  mix-blend-mode: difference;
-  cursor:pointer;
-}
-
-
-/* マウスカーソル用 */
-
 .sp-mode {
   display: none;
 }
@@ -324,9 +268,14 @@ max-height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい
   display: flex;
 }
 
+.heaader_section01 li {
+  color: #fff;
+}
+
 .header_navi{
   margin-right: 40px;
 }
+
 
 .header_navi li{
   margin: 0 10px;
